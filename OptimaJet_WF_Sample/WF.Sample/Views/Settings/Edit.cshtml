@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Html.EnableClientValidation(true);
+}
+@model WF.Sample.Models.SettingsModel
+<h2>Settings</h2>
+
+@using (Html.BeginForm("Edit", "Settings", FormMethod.Post))
+{
+    @Html.ValidationSummary(true, "Error.")
+
+    <table class="table">
+        <tbody><tr>
+                   <th>Param</th>
+                   <th>Value</th>
+               </tr>
+            <tr>
+                <td><code>Workflow Scheme</code></td>
+                <td>
+                   @Html.TextAreaFor(m => m.WFSchema)
+                    <div>
+                        <button value="save" class="button">Save</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><code>Roles</code></td>
+                <td>
+                    @Html.Partial("Roles", Model.Roles)
+                </td>
+            </tr>
+            <tr>
+                <td><code>StructDivisions</code></td>
+                <td>
+                    @Html.Partial("StructDivision", Model)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+}
+<script language="Javascript" type="text/javascript" src="@Url.Content("~/Content/edit_area/edit_area_full.js")"> </script>
+<script language="Javascript" type="text/javascript">
+    editAreaLoader.init({
+        id: "WFSchema",
+        start_highlight: true,
+        font_size: "8",
+        font_family: "verdana, monospace",
+        allow_resize: "both",
+        allow_toggle: false,
+        language: "en",
+        syntax: "xml",
+        plugins: "charmap",
+        charmap_default: "arrows",
+        word_wrap: true
+    });
+</script>

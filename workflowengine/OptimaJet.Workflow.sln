@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptimaJet.Workflow.Core", "OptimaJet.Workflow.Core\OptimaJet.Workflow.Core.csproj", "{D92EF824-B99D-4955-8078-AA8ECE917187}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptimaJet.Common", "OptimaJet.Common\OptimaJet.Common.csproj", "{453CDECA-2953-4E38-AA86-0E4B9ED6EEF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D92EF824-B99D-4955-8078-AA8ECE917187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D92EF824-B99D-4955-8078-AA8ECE917187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D92EF824-B99D-4955-8078-AA8ECE917187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D92EF824-B99D-4955-8078-AA8ECE917187}.Release|Any CPU.Build.0 = Release|Any CPU
+		{453CDECA-2953-4E38-AA86-0E4B9ED6EEF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{453CDECA-2953-4E38-AA86-0E4B9ED6EEF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{453CDECA-2953-4E38-AA86-0E4B9ED6EEF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{453CDECA-2953-4E38-AA86-0E4B9ED6EEF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

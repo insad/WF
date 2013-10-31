@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OptimaJet.Workflow.DbPersistence.DbPersistenceProvider" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABFCAIBIAAABAAEAAgQAAIAgEAAAKAAAQJAAEAAAAAA=</HashCode>
+      <FileName>DbPersistenceProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.DbPersistence.DbProvider" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAACAAAA=</HashCode>
+      <FileName>DbProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.DbPersistence.DbSchemePersistenceProvider" Collapsed="true">
+    <Position X="5" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAQAAAAAAQAAAQAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>DbSchemePersistenceProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.DbPersistence.DbXmlWorkflowGenerator" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>DbXmlWorkflowGenerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.DbPersistence.RuntimePersistence" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>RuntimePersistence.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.DbPersistence.WorkflowPersistenceModelDataContext" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAgQACAACAAgCAAEBAAA=</HashCode>
+      <FileName>WorkflowPersistenceModelDataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.DbPersistence.WorkflowProcessInstance" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IIAiAgBBAIACCAAAAAAAAAAFiAAAEAAQGAAAgAGUQIQ=</HashCode>
+      <FileName>WorkflowProcessInstance.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.DbPersistence.WorkflowProcessInstancePersistence" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="1.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAADAAAAABAAAAAAAAABiAAAEBAAAAAgCAAEAAA=</HashCode>
+      <FileName>WorkflowProcessInstancePersistence.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.DbPersistence.WorkflowProcessInstanceStatus" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAyAAAFAAAAAAQAAAAAAAABiAAAAAAAAAAAAAAEACA=</HashCode>
+      <FileName>WorkflowProcessInstanceStatus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.DbPersistence.WorkflowProcessScheme" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.75" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IAAiAgABAAAAAAEIAAAAAAAFrAAAAAIAAAQAAAAEAAA=</HashCode>
+      <FileName>WorkflowProcessScheme.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.DbPersistence.WorkflowProcessTransitionHistory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="2.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EBAiAAEBYAAAEAAgAApAAAABiAAAEAgCACoAKBgEAAA=</HashCode>
+      <FileName>WorkflowProcessTransitionHistory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.DbPersistence.WorkflowRuntime" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAABAAAAAAAAAAAAAAABiAAAAAAAAAQAACAEAAg=</HashCode>
+      <FileName>WorkflowRuntime.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.DbPersistence.WorkflowScheme" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.75" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAABAAAAAAAAAAAgAAAFiAAAAAgAAAQAAAAAAAA=</HashCode>
+      <FileName>WorkflowScheme.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.DbPersistence.Properties.Settings" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAgAAAEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

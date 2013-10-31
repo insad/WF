@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OptimaJet.Workflow.Core.Builder.WorkflowBuilder&lt;TSchemeMedium&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="41" Y="4.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAgAIAAAIAQBACAAAAAAAAAEEAEAAIAACAAAAAAAAA=</HashCode>
+      <FileName>Builder\WorkflowBuilder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Bus.ActivityExecutor" Collapsed="true">
+    <Position X="28.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAABAAAgQAAAAAAAAAAABAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Bus\ActivityExecutor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Bus.MethodParameterInfo" Collapsed="true">
+    <Position X="43.25" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAQAAABAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Bus\ExecutionRequestParameters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Bus.ParameterContainerInfo" Collapsed="true">
+    <Position X="32" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAgAAAAAAA=</HashCode>
+      <FileName>Bus\ExecutionRequestParameters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Bus.ExecutionRequestParameters" Collapsed="true">
+    <Position X="29" Y="1.5" Width="2.5" />
+    <NestedTypes>
+      <Class Name="OptimaJet.Workflow.Core.Bus.ExecutionRequestParameters.MethodToExecuteInfo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Bus\ExecutionRequestParameters.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAEAAEAAAAAAAABAAAAQAAAAAAAIEEAAQAAAAAAQAFA=</HashCode>
+      <FileName>Bus\ExecutionRequestParameters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Bus.ExecutionResponseEventArgs" Collapsed="true">
+    <Position X="32" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Bus\ExecutionResponseEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Bus.ExecutionResponseParameters" Collapsed="true">
+    <Position X="2.5" Y="7.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAIAAAACAAABEEEAAAAAAAAAAAA=</HashCode>
+      <FileName>Bus\ExecutionResponseParameters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Bus.ExecutionResponseParametersComplete" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Bus\ExecutionResponseParameters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Bus.ExecutionResponseParametersError" Collapsed="true">
+    <Position X="4" Y="8.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Bus\ExecutionResponseParameters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Bus.NullBus" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAACAAAQAAAAAAAAAAAAAAAAAAAAAAAIBAAAA=</HashCode>
+      <FileName>Bus\NullBus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Cache.DefaultParcedProcessCache" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAABAAAA=</HashCode>
+      <FileName>Cache\DefaultParcedProcessCache.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Fault.ActivityNotFoundException" Collapsed="true">
+    <Position X="30.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fault\ActivityNotFoundException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Fault.CommandNotValidException" Collapsed="true">
+    <Position X="33.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fault\CommandNotValidException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Fault.CommandNotValidForStateException" Collapsed="true">
+    <Position X="36" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fault\CommandNotValidForStateException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Fault.ImpossibleToSetStatusException" Collapsed="true">
+    <Position X="34.75" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fault\ImpossibleToSetStatusException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Fault.InitialActivityNotFoundException" Collapsed="true">
+    <Position X="37.75" Y="1.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fault\InitialActivityNotFoundException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Fault.ProcessAlredyExistsException" Collapsed="true">
+    <Position X="34.25" Y="2.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fault\ProcessAlredyExistsException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Fault.ProcessNotFoundException" Collapsed="true">
+    <Position X="39" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fault\ProcessNotFoundException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Fault.SchemeAlredyExistsException" Collapsed="true">
+    <Position X="38.5" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fault\SchemeAlredyExistsException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Fault.SchemeNotFoundException" Collapsed="true">
+    <Position X="44" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fault\SchemeNotFoundException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Fault.StatusNotDefinedException" Collapsed="true">
+    <Position X="29" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fault\StatusNotDefinedException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Fault.TransitionNotFoundException" Collapsed="true">
+    <Position X="36.5" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fault\TransitionNotFoundException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Generator.TTXmlWorkflowGenerator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39.5" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Generator\TTXmlWorkflowGenerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.ActionDefinition" Collapsed="true">
+    <Position X="15.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAADAAAAAAQgADAAAAAAAAAAAEAAgQACAAAAAAA=</HashCode>
+      <FileName>Model\ActionDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.ActionDefinitionForActivity" Collapsed="true">
+    <Position X="14.75" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAABAAAAAAQAAAACAAQAAAAAAAAAAQACAAAAAAA=</HashCode>
+      <FileName>Model\ActionDefinitionForActivity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.ActivityDefinition" Collapsed="true">
+    <Position X="22" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAQAAQQAACAAAAAQAgAAAAAgEAAAAAAhAAgAQA=</HashCode>
+      <FileName>Model\ActivityDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.ActorDefinition" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAIAAACAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Model\ActorDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.ActorDefinitionExecuteRule" Collapsed="true">
+    <Position X="1" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAACAAAAAAAAAIAAABAAAAA=</HashCode>
+      <FileName>Model\ActorDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.ActorDefinitionIsIdentity" Collapsed="true">
+    <Position X="4" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ActorDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.ActorDefinitionIsInRole" Collapsed="true">
+    <Position X="6.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ActorDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.BaseDefinition" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\BaseDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.CommandDefinition" Collapsed="true">
+    <Position X="13" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAQAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\CommandDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.TriggerDefinition" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAEAAAQAAACAEAAA=</HashCode>
+      <FileName>Model\ConditionDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.CommandTriggerDefinition" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\ConditionDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.TimerTriggerDefinition" Collapsed="true">
+    <Position X="3" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAEAAA=</HashCode>
+      <FileName>Model\ConditionDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.AutoTriggerDefinition" Collapsed="true">
+    <Position X="5.25" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\ConditionDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.ConditionDefinition" Collapsed="true">
+    <Position X="39.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAEAAAQAgAAAAAAQ=</HashCode>
+      <FileName>Model\ConditionDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.DefaultDefinitions" Collapsed="true">
+    <Position X="41" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAIEQgBAiAQIAIAAAAUAAAAACCAAAAAAAgAAAU=</HashCode>
+      <FileName>Model\DefaultDefinitions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.LocalizeDefinition" Collapsed="true">
+    <Position X="41" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAIAAAAQAAAEAAAQAgAAAAAAA=</HashCode>
+      <FileName>Model\LocalizeDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.OnErrorDefinition" Collapsed="true">
+    <Position X="17.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAEAAAAEAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\OnErrorDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.SetActivityOnErrorDefinition" Collapsed="true">
+    <Position X="17.75" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Model\OnErrorDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.ParameterDefinition" Collapsed="true">
+    <Position X="24.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAEAAIQAAAAAAAAA=</HashCode>
+      <FileName>Model\ParameterDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.ParameterDefinitionForAction" Collapsed="true">
+    <Position X="22.75" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAABAAAAAAAAAAAQAAAAAAAAgIQAAAAAAAAA=</HashCode>
+      <FileName>Model\ParameterDefinitionForAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.ParameterDefinitionWithValue" Collapsed="true">
+    <Position X="25.5" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAgIQAgAAAAAAA=</HashCode>
+      <FileName>Model\ParameterDefinitionWithValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.ProcessDefinition" Collapsed="true">
+    <Position X="10.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAhAAYAIAgEAwAIACAAAAIAAAAEAAAJAgCIIAAAA=</HashCode>
+      <FileName>Model\ProcessDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.ProcessInstance" Collapsed="true">
+    <Position X="37" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAQQAAAAIAAAAAAAgAAAACCAAAQFEAAEAAgBAAUAAA=</HashCode>
+      <FileName>Model\ProcessInstance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.RestrictionDefinition" Collapsed="true">
+    <Position X="29.25" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAEAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\RestrictionDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.SchemeDefinition&lt;T&gt;" Collapsed="true">
+    <Position X="41.75" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAgAAAAAAAAAAAAAAAAAEAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Model\SchemeDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.TimerDefinition" Collapsed="true">
+    <Position X="19.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAUAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\TimerDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Model.TransitionDefinition" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgAAABAAAACAABAAAAAAAAEAAAAJAEAAAASAABAAAAA=</HashCode>
+      <FileName>Model\TransitionDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Parser.WorkflowParser&lt;TSchemeMedium&gt;" Collapsed="true">
+    <Position X="7.75" Y="7.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAEAACAgAAAAAAgAACAAAAAgAAAAAAICAQAAAAA=</HashCode>
+      <FileName>Parser\WorkflowParser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Parser.XmlWorkflowParser" Collapsed="true">
+    <Position X="8" Y="8.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ACEQAUkBICBqAAQABAgAgCAAGSAgQCEACEICgRIABAA=</HashCode>
+      <FileName>Parser\XmlWorkflowParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Persistence.ProcessStatus" Collapsed="true">
+    <Position X="41.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECEAAAAAAAAAAAAAAAQAAAAAAAgAAIAIAAAAAMAhA=</HashCode>
+      <FileName>Persistence\ProcessStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Runtime.NeedDeterminingParametersEventArgs" Collapsed="true">
+    <Position X="45.5" Y="1.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\NeedDeterminingParametersEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Runtime.ProcessStatusChangedEventArgs" Collapsed="true">
+    <Position X="44" Y="2.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\ProcessStatusChangedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Runtime.RuntimeTimerEventArgs" Collapsed="true">
+    <Position X="34" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\RuntimeTimer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Runtime.TimerKey" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAEAAAEIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\RuntimeTimer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Runtime.TimerValue" Collapsed="true">
+    <Position X="34.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABQAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\RuntimeTimer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Runtime.RuntimeTimer" Collapsed="true">
+    <Position X="32" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAgAAAgAIAAAAAAAACgAAAABQAAgAAEBAA=</HashCode>
+      <FileName>Runtime\RuntimeTimer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Runtime.SchemaWasChangedEventArgs" Collapsed="true">
+    <Position X="36" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAgEAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\SchemaWasChangedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Runtime.WorkflowCommand" Collapsed="true">
+    <Position X="45" Y="4.5" Width="1.75" />
+    <NestedTypes>
+      <Class Name="OptimaJet.Workflow.Core.Runtime.WorkflowCommand.CommandParameter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Runtime\WorkflowCommand.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAQAACAAACABAAAAAAAYAAAAIABEEABAIAAAAAAAAA=</HashCode>
+      <FileName>Runtime\WorkflowCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Runtime.WorkflowRuntime" Collapsed="true">
+    <Position X="29.25" Y="5.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EMICFIIRECAQNQAAAkAQAAkBAAEASICEAQIgAGAACEA=</HashCode>
+      <FileName>Runtime\WorkflowRuntime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Runtime.WorkflowRuntimeConfigurationExtension" Collapsed="true">
+    <Position X="32" Y="5.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>QEAACAACACAACAEAAIAAAQCAAAAAAAAEEIhAAAAEAAA=</HashCode>
+      <FileName>Runtime\WorkflowRuntimeConfigurationExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Runtime.WorkflowState" Collapsed="true">
+    <Position X="35.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\WorkflowState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimaJet.Workflow.Core.Runtime.WorkflowSync" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="37.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAGAAAAAAAAAAAACAAAQACgAAIAAAAAEAAAA=</HashCode>
+      <FileName>Runtime\WorkflowSync.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="OptimaJet.Workflow.Core.Builder.IWorkflowBuilder" Collapsed="true">
+    <Position X="38.25" Y="7.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAEAAEAAIAACAAAAAAAAA=</HashCode>
+      <FileName>Builder\IWorkflowBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OptimaJet.Workflow.Core.Bus.IWorkflowBus" Collapsed="true">
+    <Position X="40.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAACAAAQAAAAAAAAAAAAAAAAAAAAAAAIBAAAA=</HashCode>
+      <FileName>Bus\IWorkflowBus.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OptimaJet.Workflow.Core.Cache.IParsedProcessCache" Collapsed="true">
+    <Position X="29.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAgAAAAAAAAABAAAA=</HashCode>
+      <FileName>Cache\IParsedProcessCache.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OptimaJet.Workflow.Core.Generator.IWorkflowGenerator&lt;TSchemeMedium&gt;" Collapsed="true">
+    <Position X="40.5" Y="6.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Generator\IWorkflowGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OptimaJet.Workflow.Core.Parser.IWorkflowParser&lt;TSchemeMedium&gt;" Collapsed="true">
+    <Position X="28.5" Y="7.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parser\IWorkflowParser.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OptimaJet.Workflow.Core.Persistence.IPersistenceProvider" Collapsed="true">
+    <Position X="31.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABCAIBIAAABAAEAAgQAAIAAAAAACAAAQAAAEAAAAAA=</HashCode>
+      <FileName>Persistence\IPersistenceProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OptimaJet.Workflow.Core.Persistence.IRuntimePersistence" Collapsed="true">
+    <Position X="33.75" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Persistence\IRuntimePersistence.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OptimaJet.Workflow.Core.Persistence.ISchemePersistenceProvider&lt;TSchemeMedium&gt;" Collapsed="true">
+    <Position X="36" Y="6.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Persistence\ISchemePersistenceProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OptimaJet.Workflow.Core.Runtime.IWorkflowRoleProvider" Collapsed="true">
+    <Position X="32.25" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\IWorkflowRoleProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OptimaJet.Workflow.Core.Runtime.IWorkflowRuleProvider" Collapsed="true">
+    <Position X="35.5" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\IWorkflowRuleProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="OptimaJet.Workflow.Core.Model.TriggerType" Collapsed="true">
+    <Position X="32.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAACAEAAA=</HashCode>
+      <FileName>Model\ConditionDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OptimaJet.Workflow.Core.Model.ConditionType" Collapsed="true">
+    <Position X="30" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAQ=</HashCode>
+      <FileName>Model\ConditionDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OptimaJet.Workflow.Core.Model.LocalizeType" Collapsed="true">
+    <Position X="34" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Model\LocalizeDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OptimaJet.Workflow.Core.Model.OnErrorActionType" Collapsed="true">
+    <Position X="35.75" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\OnErrorActionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OptimaJet.Workflow.Core.Model.ParameterPurpose" Collapsed="true">
+    <Position X="37.5" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAIABAAAAAAAAAA=</HashCode>
+      <FileName>Model\ParameterPurpose.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OptimaJet.Workflow.Core.Model.RestrictionType" Collapsed="true">
+    <Position X="39.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Model\RestrictionDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OptimaJet.Workflow.Core.Model.TimerType" Collapsed="true">
+    <Position X="41" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAQAAAAAA=</HashCode>
+      <FileName>Model\TimerType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OptimaJet.Workflow.Core.Model.TransitionClassifier" Collapsed="true">
+    <Position X="29.75" Y="9.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAABAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Model\TransitionClassifier.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OptimaJet.Workflow.Core.Persistence.ErrorLevel" Collapsed="true">
+    <Position X="31.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Persistence\ErrorLevel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

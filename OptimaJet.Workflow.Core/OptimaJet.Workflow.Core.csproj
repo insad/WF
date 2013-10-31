@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D92EF824-B99D-4955-8078-AA8ECE917187}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OptimaJet.Workflow.Core</RootNamespace>
+    <AssemblyName>OptimaJet.Workflow.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Builder\IWorkflowBuilder.cs" />
+    <Compile Include="Builder\WorkflowBuilder.cs" />
+    <Compile Include="Bus\ActivityExecutor.cs" />
+    <Compile Include="Bus\ExecutionRequestParameters.cs" />
+    <Compile Include="Bus\ExecutionResponseEventArgs.cs" />
+    <Compile Include="Bus\ExecutionResponseParameters.cs" />
+    <Compile Include="Bus\IWorkflowBus.cs" />
+    <Compile Include="Bus\NullBus.cs" />
+    <Compile Include="Cache\DefaultParcedProcessCache.cs" />
+    <Compile Include="Cache\IParsedProcessCache.cs" />
+    <Compile Include="Fault\ActivityNotFoundException.cs" />
+    <Compile Include="Fault\CommandNotValidException.cs" />
+    <Compile Include="Fault\CommandNotValidForStateException.cs" />
+    <Compile Include="Fault\ImpossibleToSetStatusException.cs" />
+    <Compile Include="Fault\InitialActivityNotFoundException.cs" />
+    <Compile Include="Fault\ProcessAlredyExistsException.cs" />
+    <Compile Include="Fault\ProcessNotFoundException.cs" />
+    <Compile Include="Fault\SchemeAlredyExistsException.cs" />
+    <Compile Include="Fault\SchemeNotFoundException.cs" />
+    <Compile Include="Fault\StatusNotDefinedException.cs" />
+    <Compile Include="Fault\TransitionNotFoundException.cs" />
+    <Compile Include="Generator\IWorkflowGenerator.cs" />
+    <Compile Include="Generator\TTXmlWorkflowGenerator.cs" />
+    <Compile Include="Model\ActionDefinition.cs" />
+    <Compile Include="Model\ActionDefinitionForActivity.cs" />
+    <Compile Include="Model\ActivityDefinition.cs" />
+    <Compile Include="Model\ActorDefinition.cs" />
+    <Compile Include="Model\BaseDefinition.cs" />
+    <Compile Include="Model\CommandDefinition.cs" />
+    <Compile Include="Model\ConditionDefinition.cs" />
+    <Compile Include="Model\DefaultDefinitions.cs" />
+    <Compile Include="Model\LocalizeDefinition.cs" />
+    <Compile Include="Model\OnErrorActionType.cs" />
+    <Compile Include="Model\OnErrorDefinition.cs" />
+    <Compile Include="Model\ParameterDefinition.cs" />
+    <Compile Include="Model\ParameterDefinitionForAction.cs" />
+    <Compile Include="Model\ParameterDefinitionWithValue.cs" />
+    <Compile Include="Model\ParameterPurpose.cs" />
+    <Compile Include="Model\ProcessDefinition.cs" />
+    <Compile Include="Model\ProcessInstance.cs" />
+    <Compile Include="Model\SchemeDefinition.cs" />
+    <Compile Include="Model\TimerDefinition.cs" />
+    <Compile Include="Model\TimerType.cs" />
+    <Compile Include="Model\TransitionClassifier.cs" />
+    <Compile Include="Model\TransitionDefinition.cs" />
+    <Compile Include="Model\RestrictionDefinition.cs" />
+    <Compile Include="Parser\IWorkflowParser.cs" />
+    <Compile Include="Parser\WorkflowParser.cs" />
+    <Compile Include="Parser\XmlWorkflowParser.cs" />
+    <Compile Include="Persistence\ErrorLevel.cs" />
+    <Compile Include="Persistence\IRuntimePersistence.cs" />
+    <Compile Include="Persistence\ProcessStatus.cs" />
+    <Compile Include="Persistence\IPersistenceProvider.cs" />
+    <Compile Include="Persistence\ISchemePersistenceProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Runtime\IWorkflowRoleProvider.cs" />
+    <Compile Include="Runtime\IWorkflowRuleProvider.cs" />
+    <Compile Include="Runtime\NeedDeterminingParametersEventArgs.cs" />
+    <Compile Include="Runtime\ProcessStatusChangedEventArgs.cs" />
+    <Compile Include="Runtime\RuntimeTimer.cs" />
+    <Compile Include="Runtime\SchemaWasChangedEventArgs.cs" />
+    <Compile Include="Runtime\WorkflowCommand.cs" />
+    <Compile Include="Runtime\WorkflowRuntime.cs" />
+    <Compile Include="Runtime\WorkflowRuntimeConfigurationExtension.cs" />
+    <Compile Include="Runtime\WorkflowState.cs" />
+    <Compile Include="Runtime\WorkflowSync.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OptimaJet.Common\OptimaJet.Common.csproj">
+      <Project>{453CDECA-2953-4E38-AA86-0E4B9ED6EEF2}</Project>
+      <Name>OptimaJet.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
