@@ -6,6 +6,9 @@ using OptimaJet.Workflow.Core.Model;
 
 namespace OptimaJet.Workflow.Core.Bus
 {
+    /// <summary>
+    /// 流程操作执行
+    /// </summary>
     public class ActivityExecutor
     {
         private bool ConsiderResultOnPreExecution { get; set; }

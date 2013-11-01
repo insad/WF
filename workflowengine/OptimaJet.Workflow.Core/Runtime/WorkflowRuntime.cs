@@ -142,6 +142,7 @@ namespace OptimaJet.Workflow.Core.Runtime
         }
 
      
+        //通过注入的规则(IWorkflowBus)，方法执行完成后调用本方法。
         internal void BusExecutionComplete(object sender, ExecutionResponseEventArgs e)
         {
             var executionResponseParameters = e.Parameters;

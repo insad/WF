@@ -205,7 +205,7 @@ namespace OptimaJet.Workflow.DbPersistence
         }
 
         /// <summary>
-        /// 重置所有流程实例的状态为:running,通过存储过程
+        /// 重置所有流程实例的状态，如果流程状态是Running将设置为Idled,通过存储过程
         /// </summary>
         public void ResetWorkflowRunning()
         {

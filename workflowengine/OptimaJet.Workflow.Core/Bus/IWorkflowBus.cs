@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace OptimaJet.Workflow.Core.Bus
 {
+    /// <summary>
+    /// 主要用于具体方法的执行
+    /// </summary>
     public interface IWorkflowBus
     {
         void Initialize();

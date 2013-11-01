@@ -28,6 +28,9 @@ namespace OptimaJet.Workflow.Core.Bus
         public string Name { get; internal set; }
     }
 
+    /// <summary>
+    /// 执行请求参数
+    /// </summary>
     [Serializable]
     public sealed class ExecutionRequestParameters
     {

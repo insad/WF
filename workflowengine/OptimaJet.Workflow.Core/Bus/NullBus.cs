@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace OptimaJet.Workflow.Core.Bus
 {
+    /// <summary>
+    /// 空规则定义
+    /// </summary>
     public class NullBus : IWorkflowBus
     {
         public void Initialize()

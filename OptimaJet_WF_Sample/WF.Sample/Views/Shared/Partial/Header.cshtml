@@ -10,7 +10,7 @@
         if(list != null && list.Count > 0)
         {
             currentEmployeeId = list[0].Id;
-            CurrentUserSettings.SetUserInCookies(currentEmployeeId);
+            CurrentUserSettings.SetUserInCookies(currentEmployeeId);//通过在选择用户时设置当前用户
         }
     }
     
@@ -38,6 +38,6 @@
 
 <script>
     function CurrentEmployee_OnChange(sender) {
-        window.location.search = "CurrentEmployee=" + sender.value;
+        window.location.search = "CurrentEmployee=" + sender.value;//重新发送选择用户的请求，传其它用户ID
     }
 </script>

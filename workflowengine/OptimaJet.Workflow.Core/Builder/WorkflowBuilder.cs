@@ -46,8 +46,7 @@ namespace OptimaJet.Workflow.Core.Builder
             Parser = parser;
             SchemePersistenceProvider = schemePersistenceProvider;
         }
-
-        //todo 10.31 看到这个地方了
+         
         //根据公文射频流程实例processId创建其实例，该实例包括了审批流程的公文流转审批流程ProcessDefinition
         /// <summary>
         /// 根据公文射频流程实例processId创建其实例，该实例包括了审批流程的公文流转审批流程ProcessDefinition
@@ -70,6 +69,7 @@ namespace OptimaJet.Workflow.Core.Builder
             }
             catch (SchemeNotFoundException)
             {
+                //创建新的流程,如没有《建设项目选址意见书》这个流程
                 var schemeId = Guid.NewGuid();
                 var newScheme = Generator.Generate(processName, schemeId, parameters);
                 try
