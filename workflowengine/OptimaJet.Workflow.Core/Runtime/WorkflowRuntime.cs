@@ -357,7 +357,7 @@ namespace OptimaJet.Workflow.Core.Runtime
         /// 获取可用的流转审批的可用操作
         /// </summary>
         /// <param name="processId"></param>
-        /// <param name="identityIds"></param>
+        /// <param name="identityIds">当前用户的ID</param>
         /// <param name="commandNameFilter"></param>
         /// <param name="mainIdentityId"></param>
         /// <returns></returns>

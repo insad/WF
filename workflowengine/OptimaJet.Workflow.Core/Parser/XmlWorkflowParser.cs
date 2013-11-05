@@ -110,7 +110,7 @@ namespace OptimaJet.Workflow.Core.Parser
             if (parametersElement == null) throw new ArgumentNullException("");
 
             var parameters = new List<ParameterDefinition>();
-
+            //todo:不清楚在新建流程那来这么多的Parameter
             foreach (var element in parametersElement.Elements().ToList())
             {
                 ParameterDefinition parameterDefinition;

@@ -246,7 +246,7 @@ namespace OptimaJet.Workflow.DbPersistence
         /// <summary>
         /// 检查WorkflowProcessInstance是否存在
         /// </summary>
-        /// <param name="processId"></param>
+        /// <param name="processId">Document.id</param>
         /// <returns></returns>
         public bool IsProcessExists(Guid processId)
         {
